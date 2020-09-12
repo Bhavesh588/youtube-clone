@@ -1,0 +1,106 @@
+.recommendedVideos {
+    flex: 0.87;
+    background-color: rgb(24, 24, 24);
+    color: rgb(235, 235, 235);
+    padding: 0px 0px;
+    padding-bottom: 0;
+}
+
+.grid-container3 {
+    background-color: rgb(32, 32, 32);
+    border-top: 1px solid rgb(65, 65, 65);
+    border-bottom: 1px solid rgb(65, 65, 65);;
+    padding: 0;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.grid-item3 {
+    display: flex;
+    padding: 0px 10px;
+    width: max-content;
+}
+
+.grid-item3 > div {
+    font-size: 13px;
+    font-weight: 550;
+    background-color: rgb(55, 55, 55);
+    border: 0.5px solid rgb(65, 65, 65);
+    border-radius: 20px;
+    padding: 8px 10px;
+    margin: 8px 5px;
+}
+
+.grid-item3 > .active {
+    background-color: white;
+    color: gray;
+}
+
+.grid-container2 {
+    /* background-color: gray; */
+    padding: 0;
+    margin: 0px 80px;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.grid-item2 > h3 {
+    margin: 0px 10px;
+    margin-bottom: 20px;
+    font-weight: 550;
+    font-size: 20px;
+}
+
+.grid-item2 > hr {
+    margin: 30px 0px;
+    border: 0;
+    background-color: rgb(49, 49, 49);
+    height: 3px;
+    font-size: 25px;
+}
+
+.grid-item2.cen {
+    text-align: center;
+}
+
+.grid-item2 > button {
+    width: 100%;
+    margin: 0;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    padding: 15px;
+}
+
+.grid-item2.toppart > hr {
+    margin-top: 0px;
+}
+
+.grid-item2 > button:hover {
+    background-color: rgb(65, 65, 65);
+}
+
+.grid-container {
+    /* background-color: gray; */
+    margin: 0px 70px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-auto-columns: 4fr;
+}
+
+.grid-item {
+    padding: 8px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1325px) {
+    .grid-container {
+        padding: 0;
+    }
+    .recommendedVideos {
+        flex: 0.98;
+    }
+}

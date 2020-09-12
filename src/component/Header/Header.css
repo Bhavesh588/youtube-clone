@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: sticky;
+    color: white;
+    top: 0;
+    z-index: 100;
+    background-color: rgb(32, 32, 32);
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+    margin-left: 18px;
+}
+
+.header__left > button {
+    padding: 0;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.header__mainlogo {
+    display: flex;
+    padding-top: 0px;
+    text-decoration: none;
+    color: white;
+}
+
+.header__link {
+    margin-left: 20px;
+}
+
+.header__logo {
+    object-fit: contain;
+    color: red;
+}
+
+.header__youtitle {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+
+.header__sup {
+    font-size: 10px;
+    padding-left: 2px;
+    color: lightgray;
+}
+
+.header__input {
+    display: flex;
+    justify-content: center;
+    width: 34%;
+}
+
+.header__inputButton {
+    display: flex;
+    align-items: center ;
+    justify-content: center ;
+    width: 50px !important;
+    padding: 6px 6px;
+    background-color: rgb(49, 49, 49);
+    color: gray;
+}
+
+
+.header__input > input {
+    flex: 1;
+    border-radius: 0;
+    background-color: rgb(18, 18, 18);
+    border: 1px solid rgb(49, 49, 49);
+    padding: 4px 12px;
+    font-size: 17px;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid rgb(28, 98, 185);
+}
+
+.header__icons {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.header__icon {
+    margin-right: 1.5rem;
+}
