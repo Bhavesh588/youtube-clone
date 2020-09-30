@@ -7,7 +7,7 @@
 }
 
 .grid-container3 {
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(131, 123, 123);
     border-top: 1px solid rgb(65, 65, 65);
     border-bottom: 1px solid rgb(65, 65, 65);;
     padding: 0;
@@ -40,7 +40,7 @@
 .grid-container2 {
     /* background-color: gray; */
     padding: 0;
-    margin: 0px 80px;
+    margin: 0px 3vw;
     display: grid;
     grid-template-columns: auto;
 }
@@ -84,7 +84,7 @@
 
 .grid-container {
     /* background-color: gray; */
-    margin: 0px 70px;
+    margin: 0px 3vw;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-auto-columns: 4fr;
@@ -102,5 +102,27 @@
     }
     .recommendedVideos {
         flex: 0.98;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .grid-container {
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .grid-container {
+        grid-template-columns: 50% 50%;
+    }
+
+    .recommendedVideos {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .grid-container {
+        grid-template-columns: 100%;
     }
 }

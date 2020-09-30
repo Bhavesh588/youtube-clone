@@ -1,4 +1,56 @@
+body {
+    background-color: rgb(24,24,24);
+}
+
 .app__page {
     display: flex;
     font-family: sans-serif;
+    overflow: hidden;
+}
+
+.footermobile {
+    display: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid gray;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+
+.active {
+    color: white;
+}
+
+.footer__content > p {
+    font-size: 12px;
+}
+
+.footer__addcircle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: 2px solid gray;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 810px) {
+    .footermobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }

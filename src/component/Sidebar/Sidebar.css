@@ -52,3 +52,12 @@
         display: inline;
     }
 }
+
+@media screen and (max-width: 810px) {
+    .side {
+        display: none;
+    }
+    .sidebar__small {
+        display: none;
+    }
+}

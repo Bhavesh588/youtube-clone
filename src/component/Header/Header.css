@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
+/*
+
+0 - 600px:          Phone
+600px - 900px       Table Portrait
+900px - 1200px      Table Landscape
+[1200px - 1800px]   Desktop Normal Styles
+1800px +            Big Desktop
+
+1em = 16px
+
+ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
+
+*/
+
+.header__wrapper {
+    background-color: rgb(32, 32, 32);
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -11,6 +29,25 @@
     z-index: 100;
     background-color: rgb(32, 32, 32);
 }
+.header2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: sticky;
+    color: white;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: rgb(32, 32, 32);
+}
+
+.displaynone {
+    display: none;
+}
+.displayinherit {
+    display: inherit;
+}
 
 .header__left {
     display: flex;
@@ -19,6 +56,8 @@
 }
 
 .header__left > button {
+    display: flex;
+    align-self: center;
     padding: 0;
     border: none;
     color: white;
@@ -28,7 +67,13 @@
 
 .header__mainlogo {
     display: flex;
+    align-self: center;
     padding-top: 0px;
+    text-decoration: none;
+    color: white;
+}
+
+.header__mainlogo:hover {
     text-decoration: none;
     color: white;
 }
@@ -43,20 +88,31 @@
 }
 
 .header__youtitle {
+    display: flex;
+    align-self: center;
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
+    margin-top: 3px;
 }
 
 .header__sup {
+    display: inherit;
     font-size: 10px;
     padding-left: 2px;
     color: lightgray;
+    margin-top: 10px;
 }
 
 .header__input {
     display: flex;
     justify-content: center;
     width: 34%;
+}
+
+.header__inputmobile {
+    display: flex;
+    justify-content: center;
+    /* width: 34%; */
 }
 
 .header__inputButton {
@@ -69,6 +125,15 @@
     color: gray;
 }
 
+.header__inputButtonSize {
+    display: none;
+    border: 0;
+    cursor: pointer;
+}
+.header__inputButtonSize:hover {
+    color: white;
+}
+
 
 .header__input > input {
     flex: 1;
@@ -77,6 +142,23 @@
     border: 1px solid rgb(49, 49, 49);
     padding: 4px 12px;
     font-size: 17px;
+    color: white;
+}
+.header__inputmobile > input {
+    flex: 1;
+    border-radius: 0;
+    background-color: rgb(18, 18, 18);
+    border: 1px solid rgb(49, 49, 49);
+    padding: 4px 12px;
+    font-size: 17px;
+    color: white;
+}
+
+.header__back {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 0;
     color: white;
 }
 
@@ -93,5 +175,52 @@ input:focus {
 }
 
 .header__icon {
+    display: flex;
+    align-items: center;
     margin-right: 1.5rem;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menubtn {
+    color: white;
+    background-color: transparent;
+    border: 0;
+}
+
+@media screen and (max-width: 810px) {
+    .menu {
+        display: none;
+    }
+    .header__link {
+        margin-left: 0;
+    }
+    
+    .header__sup {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__input {
+        display: none;
+    }
+
+    .header__inputButtonSize {
+        display: flex;
+        align-items: center ;
+        justify-content: center ;
+        width: 50px !important;
+        padding: 6px 6px;
+        background-color: transparent;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .header__icon {
+        display: none;
+    }
 }
